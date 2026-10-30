@@ -38,22 +38,20 @@ Primary agent role: publication-agent.
    project structure that maintains and organizes that outcome.
 4. For a public release, retain the template's ordered centered title and
    catch phrase, centered infographic, centered badge group, `What is`,
-   differentiators, Getting started, Public actions, and Examples sections.
+   differentiators, Getting started, and Public actions sections.
    For Knowledge-worker, use the verified knowledge-base purpose and public
    actions. Embed an infographic only when an approved file exists in
    `assets/images/` and the `asset-agent` has handed it off for public
-   documentation. Express differentiators as concise bullet points; use bullets
-   also for public actions and the action steps under examples introduced with
-   `Imagine… You can use… Proceed as follows:`.
+   documentation. Express differentiators as prose; use bullets only for
+   public actions.
    Introduce Getting started with continuous, complete sentences, explain that
    cloning creates the user's independent destination folder, and provide the
    stable latest-release ZIP alternative as an explicit download, extract, and
    open command sequence when it is published. Continue from
-   setup directly into two to four simple public-action examples before the
-   complete action list; do not add a separate next-steps subsection.
-   Examples assume setup has already been completed and do not repeat clone
-   commands. Describe only public actions that exist; future capabilities
-   belong in the extensibility explanation until their skills are added.
+   setup directly to the complete action list; do not add a separate
+   next-steps subsection, action examples, or an Examples section. Describe
+   only public actions that exist; future capabilities belong in the
+   extensibility explanation until their skills are added.
 5. Ask for clarification about any material gap before creating the affected
    section. Do not infer public claims, access rules, or release details.
 6. Produce the updated README and a concise gap report for any unanswered

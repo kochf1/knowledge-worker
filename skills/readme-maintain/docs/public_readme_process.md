@@ -19,22 +19,15 @@ Use this process when `AGENTS.md` declares `README profile: public-release`.
    skills can extend the work and conclude with the organizational value. Use
    direct, affirmative sentences that explain what the project does and how it
    works; avoid contrast-by-negation constructions in public prose.
-6. List verified differentiators under `What makes it different?` as concise
-   bullets.
+6. Explain verified differentiators under `What makes it different?` in prose.
 7. Introduce the tested clone-to-explicit-destination commands with continuous,
    complete sentences explaining that cloning creates the complete structure in
    the user's chosen folder. Provide the stable latest-release ZIP permalink
    only after its named archive is published, as a download, extract, and open
    command sequence that extracts directly into the destination folder.
-8. Continue from setup with two to four simple public-action examples, then
-   list every public action as a concise bullet. Do not add a next-steps
-   heading. Examples assume setup is complete, do not repeat clone commands,
-   and use only current public actions.
-9. Add two or three verified, end-to-end examples. Introduce each with
-   `Imagine you need to {what}. You can use {Project} to {outcome}. Proceed as
-   follows:` and then list only the required action bullets. Prefer examples
-   that demonstrate distinct real-world uses, such as academic and office
-   knowledge work.
-10. Before an explicit GitHub commit, recheck every image path, alt text, URL,
+8. Continue from setup with one sentence directing the user to Public actions.
+   List every public action as a concise bullet. Do not add a next-steps
+   heading, action examples, or an Examples section.
+9. Before an explicit GitHub commit, recheck every image path, alt text, URL,
     badge, command, and public claim. Preserve the section order in the
     public-release template.

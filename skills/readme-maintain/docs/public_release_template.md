@@ -25,9 +25,11 @@ organizational value enabled by the structure.}
 
 ### What makes it different?
 
-- **{Verified differentiator.}** {Factual explanation.}
-- **{Verified differentiator.}** {Factual explanation.}
-- **{Verified differentiator.}** {Factual explanation.}
+**{Verified differentiator.}** {Factual explanation.}
+
+**{Verified differentiator.}** {Factual explanation.}
+
+**{Verified differentiator.}** {Factual explanation.}
 
 ## Getting started
 
@@ -43,35 +45,17 @@ cd {destination-folder}
 `{project-slug}_latest.zip` permalink, extracts it into the chosen destination,
 and opens that destination.}
 
-{Continue from setup with a sentence explaining what the user can do now that
-the structure is installed. Do not add a next-steps heading.}
-
-- {Simple public action example.}
-- {Simple public action example.}
-- {Simple public action example.}
+{Continue from setup with a sentence directing the user to the Public actions
+section. Do not add a next-steps heading or action examples.}
 
 ## Public actions
 
 - `{public command}` {Verified behavior.}
 - `{public command}` {Verified behavior.}
 
-## Examples
-
-### {Use case}
-
-Imagine you need to {verified user goal}. You can use {Project Name} to
-{verified outcome}. Proceed as follows:
-
-- {Verified public action and its purpose.}
-- {Verified public action and its purpose.}
-
-{Assume the setup steps above have already been completed. Do not repeat clone
-commands. Include only currently available public actions.}
-
 Keep this template public, concise, and evidence-based. Do not expose internal
 operating instructions, private plans, QA details, credentials, or unverified
 roadmap claims. Do not add an infographic image until it exists under
 `assets/images/`, has been approved through the asset-management workflow, and
-has accurate alt text. Use bullet lists for differentiators, public actions,
-and the action steps within examples; express other explanatory content as
-prose.
+has accurate alt text. Use bullets only for public actions; express all other
+content as prose.

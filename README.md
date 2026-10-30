@@ -39,16 +39,18 @@ AI-driven knowledge management.
 
 ### What makes it different?
 
-- **Well-structured knowledge topics.** Each topic keeps information, ideas,
-  references, and source files in clear, separate records, making it easier to
-  understand what is known, what is still being explored, and where it came
-  from.
-- **Maintained information navigation.** Main and local INFO documents are
-  kept current so people and agents can quickly find skills, topics, and the
-  relevant working records.
-- **Clear multi-agent definitions.** The project documents how an orchestrator,
-  agent roles, and reusable skills work together, so multi-agent work has a
-  shared structure with clear working guidance.
+**Well-structured knowledge topics.** Each topic keeps information, ideas,
+references, and source files in clear, separate records, making it easier to
+understand what is known, what is still being explored, and where it came
+from.
+
+**Maintained information navigation.** Main and local INFO documents are kept
+current so people and agents can quickly find skills, topics, and the relevant
+working records.
+
+**Clear multi-agent definitions.** The project documents how an orchestrator,
+agent roles, and reusable skills work together, so multi-agent work has a
+shared structure with clear working guidance.
 
 ## Getting started
 
@@ -70,12 +72,8 @@ unzip knowledge-worker_latest.zip -d /path/to/your-knowledge-base
 cd /path/to/your-knowledge-base
 ```
 
-With the structure installed, you can begin organizing knowledge right away:
-
-- Explore the available areas: `Show info`.
-- Create a first topic: `Create topic {topic}`.
-- Add attributed material to that topic: `Learn info about {topic}`.
-- Review the maintained topic catalog: `Show info knowledge`.
+With the structure installed, use one of the public actions below to begin
+organizing knowledge.
 
 ## Available actions
 
@@ -86,36 +84,3 @@ With the structure installed, you can begin organizing knowledge right away:
 - `Maintain assets {request}` classifies, adds, inspects, or reports on approved project assets.
 - `GitHub status` provides a read-only report of the local repository, remote,
   branch, and release state.
-
-## Examples
-
-### Academic literature review
-
-Imagine you need to organize a literature review with traceable sources. You
-can use Knowledge-worker to establish a dedicated research knowledge base.
-Proceed as follows:
-
-- Inspect the available structure: `Show info`
-- Create a topic: `Create topic Research Methods`
-- Add a paper PDF and its citation: `Learn info about Research Methods`
-- Review the maintained topic catalog: `Show info knowledge`
-
-### Office policy and decision knowledge
-
-Imagine you need to preserve team policies, decisions, and their supporting
-sources. You can use Knowledge-worker to maintain a shared operational
-knowledge base. Proceed as follows:
-
-- Create a policy topic: `Create topic Remote Work Policy`
-- Add the attributed policy material: `Learn info about Remote Work Policy`
-- Review the knowledge base: `Show info knowledge`
-
-### Project discovery and handoff
-
-Imagine you need to preserve research and decisions for a new project. You can
-use Knowledge-worker to create a transferable discovery knowledge base.
-Proceed as follows:
-
-- Create a research topic: `Create topic Stakeholder Interviews`
-- Add interview evidence: `Learn info about Stakeholder Interviews`
-- Register an infographic: `Maintain assets project-overview infographic`
