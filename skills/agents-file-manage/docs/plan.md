@@ -28,6 +28,10 @@ decisions.
   navigation.
 - It must not represent a capability role as a persistent external agent
   without an explicit deployment decision.
+- It must record asset ownership and preservation boundaries when `assets/` is
+  part of the managed project structure.
+- It must record the public-release README and stable release-package policy
+  when repository publication is selected.
 
 ## Delegation to Code
 

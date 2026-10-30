@@ -11,8 +11,9 @@ declares a public-release or private-repository README profile, or on a direct
 README request. It uses verified project evidence and reports missing facts
 rather than inventing content.
 
-For Knowledge-worker, the public-release README is intentionally limited to a
-purpose paragraph, stable GitHub Releases link, and verified Topics table.
+For Knowledge-worker, the public-release README presents a centered title,
+catch phrase, approved infographic, and badges before explaining the
+graph-based multi-agent knowledge-base model, public actions, and examples.
 
 ## Script Requirements
 
@@ -20,14 +21,33 @@ purpose paragraph, stable GitHub Releases link, and verified Topics table.
   before deciding whether README maintenance applies.
 - It must select the public-release or private-repository template without
   exposing information beyond the declared visibility.
-- It must generate public-release README content in this order: title,
-  one-line description, Infographics, Badges, What does, differentiators,
-  Getting started, and What can you do next.
-- It must reserve infographics for an approved generation process and use only
-  verified badges, clone commands, differentiators, and next operations.
+- It must generate public-release README content in this order: centered title
+  and catch phrase, centered infographic, centered badges, What is,
+  differentiators, Getting started, Public actions, and Examples.
+- It must express differentiators as concise bullets, along with public
+  actions and action steps in examples. Each example must use the approved
+  `Imagine… You can use… Proceed as follows:` introduction.
+- It must use only approved `assets/images/` infographics and verified badges,
+  clone-to-destination commands, differentiators, public actions, and examples.
 - It must maintain the root README automatically for a development project with full publication and leave an application project unchanged unless directly requested.
 - It must collect composition evidence from the project plan, architecture, release and roadmap records, module requirements, QA, existing README, and available assets, preserving accurate existing content.
-- It must use the plan's Title, Tagline, Core Proposition, and Key Ideas; verified architecture and requirements; QA-backed claims; and real assets to compose the infographic, banners, What is, Why, optional Key Ideas, Getting Started, and Examples layout.
+- It must use verified project purpose, public actions, QA-backed claims, and
+  real approved assets to compose the public-release layout.
+- It must use direct, affirmative explanatory prose that states what the
+  project does and how it works rather than contrasting it with a negative
+  alternative.
+- It must structure the `What is` explanation in two paragraphs: practical
+  value, intended audience, outcome, and concrete material first; the
+  structure that maintains and organizes that outcome, extensible skills, and
+  organizational value second.
+- It must introduce clone-to-destination setup with continuous, complete
+  sentences, provide a stable latest-release ZIP alternative when published,
+  then continue directly with two to four simple public-action examples.
+- It must express the release-package alternative as a complete download,
+  extract, and open command sequence that extracts directly into the chosen
+  destination folder.
+- It must avoid a next-steps heading, repeated clone commands in examples, and
+  descriptions of public actions that are not yet implemented.
 - It must ask the embedded audience, setup, example, public-capability, visual-asset, and support/contribution/license questions when the maintained records do not supply a required user-facing fact.
 - It must create or refresh the README when a full-publication development project is created or receives a direct request, and it must never infer that an application is safe to publish.
 - It must report unavailable required facts or assets instead of fabricating content.

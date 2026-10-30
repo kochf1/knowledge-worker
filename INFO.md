@@ -22,7 +22,13 @@ Knowledge-worker is the shared knowledge-base maintainer for graph-based multi-a
 - `Learn info about {topic}` or `Absorb info about {topic}` adds supplied
   knowledge to an existing topic with attribution, keeping verified
   information, ideas, and source references separate. ([info-learn](skills/info-learn/SKILL.md))
+- `Maintain assets {request}` classifies, adds, inspects, or reports on
+  approved project assets in the appropriate `assets/` subfolder; it preserves
+  existing files and escalates replacement, deletion, or public-documentation
+  changes. ([asset-manage](skills/asset-manage/SKILL.md))
 - `GitHub {action}` performs only the requested status, connection, versioned
-  commit/release, or pull action; commits generate a message and semantic
-  GitHub release, while synchronization never occurs automatically.
+  commit/release, or pull action; normal commits publish framework material
+  only, while `GitHub commit knowledge` explicitly includes the local
+  knowledge base. Commits generate a message, semantic GitHub release, and
+  stable latest-release ZIP archive; synchronization never occurs automatically.
   ([github-maintain](skills/github-maintain/SKILL.md))

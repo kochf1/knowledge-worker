@@ -16,12 +16,21 @@ navigation without overwriting material.
 
 - It must confirm project identity, role, required structure, and external
   README need before changing a target.
+- For a public-release README profile, it must confirm the approved
+  infographic, verifiable badges, clone destination, public actions, examples,
+  and release-package policy before publication content is maintained.
 - It must establish the target's graph-based multi-agent orchestration
   contract: an orchestrator, necessary agent roles, skill ownership and
   handoffs, and escalation boundaries, using `multiagent_project_model.md`.
 - It must create required folders, `AGENTS.md` with the multi-agent
   orchestration contract, and main and local `INFO.md`
   documents when the target structure is absent.
+- It must create `assets/images/` for approved infographics and
+  `assets/reports/` for generated reports; other asset subfolders require a
+  clearly named asset type.
+- It must declare an `asset-agent` for the standard assets area, including
+  ownership, skill routing, and the handoff to publication when a public asset
+  reference is requested.
 - It must reconcile missing required elements and stale navigation when the
   target structure exists.
 - It must preserve unexpected or conflicting material and report it rather
@@ -34,6 +43,11 @@ navigation without overwriting material.
   remote, history, tags, releases, or project-specific rules.
 - It must record the owner-selected repository visibility and README profile
   in the target AGENTS file before README maintenance can occur.
+- It must configure the portable default publication scope: framework material
+  is published, while knowledge and environment-local content remain local
+  until the owner explicitly invokes the knowledge-publication action.
+- It must transfer the current `readme-maintain` package and its public README
+  references when the target selects a public-release profile.
 
 ## Delegation to Code
 

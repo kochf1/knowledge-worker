@@ -27,6 +27,7 @@ its own.
 | `skill-agent` | Create, document, and verify bounded reusable capabilities. | `skill-create`, `skill-validate`, `code-document` | Routes catalog changes to `information-agent`. |
 | `information-agent` | Maintain and present internal navigation information. | `info-maintain`, `info-show` | Returns requested information or routes knowledge work to `knowledge-agent`. |
 | `knowledge-agent` | Create topics and maintain durable, attributed knowledge. | `topic-create`, `info-learn`, `knowledge-base-maintain` | Returns evidence to the orchestrator. |
+| `asset-agent` | Classify, retain, and expose approved project-produced assets. | `asset-manage` | Routes public-documentation changes to `publication-agent`; escalates replacement or deletion. |
 | `publication-agent` | Maintain external repository documentation and explicit GitHub operations. | `readme-maintain`, `github-maintain` | Escalates external writes and version decisions to the user. |
 
 The deliberation path is always **public action → orchestrator → agent role →
@@ -41,10 +42,21 @@ running. See the transferable [graph-based multi-agent project model](skills/pro
 - `Show info` opens the root [INFO.md](INFO.md) in the workspace editor.
 - `Show info {area}` opens the confirmed area's local `INFO.md` through
   [info-show](skills/info-show/SKILL.md).
+- `Maintain assets {request}` invokes
+  [asset-manage](skills/asset-manage/SKILL.md) to classify, add, inspect, or
+  report on approved project assets.
 
 ## Permanent structure
 
 - `skills/` contains complete local skill packages in the approved format.
+- `assets/` contains durable project-produced assets. Store infographics in
+  `assets/images/`, generated reports in `assets/reports/`, and add other
+  clearly named asset subfolders only when their asset type requires one.
+- Asset files must have descriptive stable names, retain applicable source or
+  generation context with their request or report, and remain in `assets/`.
+  Do not replace, relocate, or delete an existing asset without explicit
+  approval. Public documentation may reference an approved asset only through
+  the `asset-agent` to `publication-agent` handoff.
 - Every local skill package uses the lowercase `{target}-{action}` naming
   convention; its folder name and `name` front-matter value must match.
 - Every `SKILL.md` uses Codex-compatible top-level front matter: `name`,
@@ -54,6 +66,12 @@ running. See the transferable [graph-based multi-agent project model](skills/pro
 - Every local skill declares exactly one primary agent role in its `Scope`;
   that role must appear in the Agent graph above.
 - `knowledge/` contains durable topic-based knowledge only.
+- Knowledge topics and their local records are running-environment content:
+  they remain local by default and are not part of a normal GitHub release.
+  `knowledge/INFO.md` is the tracked structural stub; its local updates are
+  also excluded from a default commit.
+- `.env`, `.local/`, `local/`, `runtime/`, and `*.local` are local
+  environment material and must never be staged by the GitHub workflow.
 - `temp/` contains migration-only material and will be deleted after migration
   acceptance.
 - `INFO.md` is the internal navigation document. A root `README.md` is added
@@ -92,11 +110,20 @@ ideas record.
 - Apply the shared [GitHub version-control standard](skills/github-maintain/docs/version_control.md).
 
 Supported actions are `status`, `connect {owner/repository}`, `commit`,
-`commit version`, `commit minor version`, `commit major version`, and `pull`.
+`commit version`, `commit minor version`, `commit major version`, `commit
+knowledge`, and `pull`.
 
-Every commit creates a generated message and a GitHub-controlled semantic
-release. `commit` defaults to a patch bump; `commit version` and `commit minor
-version` use a minor bump; `commit major version` uses a major bump.
+`GitHub commit` and its version variants publish only the approved framework
+scope: control documents, managed skills, approved public assets, and external
+documentation. `GitHub commit knowledge` is the separate explicit patch-release
+action that may include `knowledge/` content and its INFO updates after a
+preview. Environment-local paths are never included.
+
+Every commit creates a generated message, a GitHub-controlled semantic release,
+and a `{project-slug}_latest.zip` archive that extracts directly into a chosen
+destination folder. `commit` defaults to a patch bump; `commit version` and
+`commit minor version` use a minor bump; `commit major version` uses a major
+bump.
 
 GitHub synchronization is manual only. No action connects, commits, pushes,
 pulls, or creates a repository unless the user explicitly requests that action.

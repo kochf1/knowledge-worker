@@ -1,43 +1,121 @@
-# Knowledge-worker
+<h1 align="center">Knowledge-worker</h1>
 
-A reusable knowledge base for maintaining transferable skills and durable,
-topic-based knowledge across agent-worker projects.
+<p align="center">
+  <strong>Graph-based knowledge bases maintained by multi-agent work.</strong>
+</p>
 
-## Infographics
+<p align="center">
+  <img src="assets/images/knowledge-worker-overview.png" alt="A graph-based multi-agent knowledge system connects orchestrated skills with structured, durable knowledge." width="100%">
+</p>
 
-No infographic is published for this release; the infographic process is being
-defined separately.
 
-## Badges
+<p align="center">
+  <a href="https://github.com/kochf1/knowledge-worker/releases">
+    <img src="https://img.shields.io/github/v/release/kochf1/knowledge-worker?display_name=tag&sort=semver&style=flat-square" alt="Latest release">
+  </a>
+  <a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+  </a>
+  <a href="skills/INFO.md">
+    <img src="https://img.shields.io/badge/Skills-13-0F766E?style=flat-square&logo=probot&logoColor=white" alt="13 managed skills">
+  </a>
+</p>
 
-[![Latest release](https://img.shields.io/github/v/release/kochf1/knowledge-worker?display_name=tag&sort=semver)](https://github.com/kochf1/knowledge-worker/releases)
+## What is Knowledge-worker?
 
-## What does Knowledge-worker do?
+Knowledge-worker is a graph-based knowledge base that organizes shared
+information by topic. It gives research groups, office teams, and project teams
+a practical way to build knowledge for any area of work, such as a literature
+review, a policy, or project discovery. You can add source material, including
+PDFs, record what it means, and review what the team already knows.
 
-Knowledge-worker organizes reusable agent-worker skills and knowledge topics so
-information, ideas, references, and preserved source material remain distinct,
-attributed, and transferable.
+The multi-agent structure maintains the knowledge base by organizing notes,
+links, ideas, and files into named topics and keeping their navigation current.
+Teams can extend the structure with approved skills for work such as answering
+questions from recorded material, preparing reports, creating workflows, and
+building dashboards. It gives people and organizations a structured path toward
+AI-driven knowledge management.
+
 
 ### What makes it different?
 
-- It separates verified information, exploratory ideas, references, and source
-  material within every knowledge topic.
-- It keeps reusable workflows as managed, validated skill packages.
-- It provides a consistent structure that other agent-worker projects can
-  adopt without inheriting another project's history or configuration.
+- **Well-structured knowledge topics.** Each topic keeps information, ideas,
+  references, and source files in clear, separate records, making it easier to
+  understand what is known, what is still being explored, and where it came
+  from.
+- **Maintained information navigation.** Main and local INFO documents are
+  kept current so people and agents can quickly find skills, topics, and the
+  relevant working records.
+- **Clear multi-agent definitions.** The project documents how an orchestrator,
+  agent roles, and reusable skills work together, so multi-agent work has a
+  shared structure with clear working guidance.
 
 ## Getting started
 
+To start, clone the repository into a folder of your choice. Cloning copies the
+complete structure into that folder, which becomes an independent knowledge
+base for your topics and material.
+
 ```sh
-mkdir -p ~/Projects
-cd ~/Projects
-git clone https://github.com/kochf1/knowledge-worker.git
-cd knowledge-worker
+git clone https://github.com/kochf1/knowledge-worker.git /path/to/your-knowledge-base
+cd /path/to/your-knowledge-base
 ```
 
-## What can you do next?
+If you prefer a release package, download the latest archive, extract it into
+your chosen folder, and open that folder:
 
-- Open the project entry points: `Show info`.
-- Start a durable knowledge area: `Create topic {topic}`.
-- Add attributed material to an existing topic: `Learn info about {topic}`.
-- Inspect repository and release state: `GitHub status`.
+```sh
+curl -L https://github.com/kochf1/knowledge-worker/releases/latest/download/knowledge-worker_latest.zip
+unzip knowledge-worker_latest.zip -d /path/to/your-knowledge-base
+cd /path/to/your-knowledge-base
+```
+
+With the structure installed, you can begin organizing knowledge right away:
+
+- Explore the available areas: `Show info`.
+- Create a first topic: `Create topic {topic}`.
+- Add attributed material to that topic: `Learn info about {topic}`.
+- Review the maintained topic catalog: `Show info knowledge`.
+
+## Available actions
+
+- `Show info` opens the main project information document.
+- `Show info {area}` opens the information document for a confirmed local area.
+- `Create topic {topic}` creates a structured, empty knowledge topic.
+- `Learn info about {topic}` adds supplied, attributed material to an existing topic.
+- `Maintain assets {request}` classifies, adds, inspects, or reports on approved project assets.
+- `GitHub status` provides a read-only report of the local repository, remote,
+  branch, and release state.
+
+## Examples
+
+### Academic literature review
+
+Imagine you need to organize a literature review with traceable sources. You
+can use Knowledge-worker to establish a dedicated research knowledge base.
+Proceed as follows:
+
+- Inspect the available structure: `Show info`
+- Create a topic: `Create topic Research Methods`
+- Add a paper PDF and its citation: `Learn info about Research Methods`
+- Review the maintained topic catalog: `Show info knowledge`
+
+### Office policy and decision knowledge
+
+Imagine you need to preserve team policies, decisions, and their supporting
+sources. You can use Knowledge-worker to maintain a shared operational
+knowledge base. Proceed as follows:
+
+- Create a policy topic: `Create topic Remote Work Policy`
+- Add the attributed policy material: `Learn info about Remote Work Policy`
+- Review the knowledge base: `Show info knowledge`
+
+### Project discovery and handoff
+
+Imagine you need to preserve research and decisions for a new project. You can
+use Knowledge-worker to create a transferable discovery knowledge base.
+Proceed as follows:
+
+- Create a research topic: `Create topic Stakeholder Interviews`
+- Add interview evidence: `Learn info about Stakeholder Interviews`
+- Register an infographic: `Maintain assets project-overview infographic`

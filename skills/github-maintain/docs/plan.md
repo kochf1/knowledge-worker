@@ -12,20 +12,28 @@ down-sync skills. Its action parameter keeps the user in control of every
 state-changing step while providing one simple GitHub action. Every commit
 generates a factual message and creates a semantic GitHub release.
 
-For Knowledge-worker commits, it first reconciles the knowledge catalog and
-README Topics table, then applies the declared README profile before generating
-the commit preview.
+For Knowledge-worker normal commits, it applies the declared README profile
+and excludes local knowledge content. Only `commit knowledge` reconciles and
+previews the knowledge catalog before it is included.
 
 ## Script Requirements
 
 - It must accept `status`, `connect {owner/repository}`, `commit`, `commit
-  version`, `commit minor version`, `commit major version`, and `pull`.
+  version`, `commit minor version`, `commit major version`, `commit knowledge`,
+  and `pull`.
 - It must confirm the exact project root before every operation.
 - It must keep status read-only.
 - It must initialize local Git only at the confirmed root and create a GitHub
   repository only with an explicit visibility choice.
 - It must generate a concise factual commit message from the changed files.
+- It must publish only framework material by default and exclude all knowledge
+  and local-runtime changes, including tracked knowledge-index changes.
+- It must include knowledge only for the explicit `commit knowledge` action,
+  after reconciling and previewing the exact selected knowledge files.
 - It must create a semantic GitHub release after a successful commit and push.
+- It must create a `{project-slug}_latest.zip` archive from the release tag,
+  for direct extraction into the destination folder, and attach it to the
+  GitHub Release.
 - It must default `commit` to a patch bump, use minor for `commit version` and
   `commit minor version`, and use major for `commit major version`.
 - It must use GitHub releases and semantic tags as the sole version authority,

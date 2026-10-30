@@ -48,6 +48,9 @@ orchestration` section with:
 Only roles necessary to the project are required. `orchestrator` is universal;
 the remaining roles are selected from the project's actual responsibilities.
 Each listed skill must have exactly one primary role in its `SKILL.md` Scope.
+When a project includes the standard `assets/` area, its graph also declares
+an `asset-agent` responsible for asset classification, preservation, and the
+handoff of approved public assets to the publication role.
 
 ## Adoption and Evolution
 
@@ -56,3 +59,12 @@ reconciled. `skill-create` assigns a primary agent role before a skill is
 created or revised, and `skill-validate` checks that declaration. Projects can
 later replace a role's local execution with an external agent without changing
 their public action, evidence, or escalation contract.
+
+For a public repository, the `asset-agent` hands an approved infographic and
+factual accessibility details to the publication role. The publication role
+uses `readme-maintain` to present the public README in this order: centered
+title and catch phrase, centered infographic, centered badges, public
+explanation, setup, actions, and examples. When GitHub versioning is selected,
+the publication role uses `github-maintain` to publish the stable
+`{project-slug}_latest.zip` archive for direct extraction into a user's chosen
+destination folder.

@@ -3,6 +3,7 @@
 | Skill | Action | Status | Plan | QA |
 | --- | --- | --- | --- | --- |
 | [agents-file-manage](agents-file-manage/SKILL.md) | Create or maintain one standard `AGENTS.md`. | PENDING | [Plan](agents-file-manage/docs/plan.md) | [QA](agents-file-manage/docs/qa.md) |
+| [asset-manage](asset-manage/SKILL.md) | Maintain approved project assets. | PENDING | [Plan](asset-manage/docs/plan.md) | [QA](asset-manage/docs/qa.md) |
 | [code-document](code-document/SKILL.md) | Apply the shared documentation standard to skill code and tests. | PENDING | [Plan](code-document/docs/plan.md) | [QA](code-document/docs/qa.md) |
 | [github-maintain](github-maintain/SKILL.md) | Connect, inspect, versioned commit, or pull one project on explicit request. | PENDING | [Plan](github-maintain/docs/plan.md) | [QA](github-maintain/docs/qa.md) |
 | [info-learn](info-learn/SKILL.md) | Add attributed learning to a topic. | PENDING | [Plan](info-learn/docs/plan.md) | [QA](info-learn/docs/qa.md) |
