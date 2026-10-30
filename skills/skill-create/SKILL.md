@@ -25,7 +25,8 @@ Primary agent role: skill-agent.
    code delegation are known. Every local skill must declare its catalog
    action in supported front-matter metadata and its primary agent role in its
    Scope. Ask for clarification when any of these is missing.
-3. Read the owning `AGENTS.md` and relevant `INFO.md` files before authoring.
+3. Read the owning `AGENTS.md`, root `README.md`, and relevant local `INFO.md`
+   files before authoring.
    Confirm that the action belongs in the shared base rather than in a
    project-specific workspace.
 4. Create only the target package folders required by the plan, its pending QA

@@ -29,9 +29,9 @@ Primary agent role: skill-agent.
    requirements, source documentation, and executable test units where code is
    delegated. Reconcile any legacy layout assumptions before relying on copied
    validation code.
-4. Confirm that the root INFO document contains only Description, Entry Points,
-   and Public Interfaces, and that `skills/INFO.md` contains only `# SKILLS
-   Info` plus its `Skill`, `Action`, `Status`, `Plan`, and `QA` table.
+4. Confirm that root `INFO.md` is absent and that `skills/INFO.md` contains
+   only `# SKILLS Info` plus its `Skill`, `Action`, `Status`, `Plan`, and `QA`
+   table.
 5. Produce QA from the current checks, refresh the skills info, and report
    PENDING or FAILED results with actual evidence. Do not use deprecated
    automation to validate or overwrite the approved formats.

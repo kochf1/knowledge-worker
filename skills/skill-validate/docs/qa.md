@@ -9,6 +9,7 @@ Status: VERIFIED
   mismatches.
 - The validator rejects a missing or duplicate `Primary agent role` declaration
   and the current catalog routes every skill to one declared AGENTS graph role.
+- The validator rejects a prohibited root `INFO.md`.
 
 ## Executed Test Units
 

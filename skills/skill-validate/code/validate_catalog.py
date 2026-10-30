@@ -19,6 +19,8 @@ def check(project: Path) -> list[str]:
     skills_root = project / "skills"
     packages = sorted(path for path in skills_root.iterdir() if path.is_dir())
     errors, actions = [], {}
+    if (project / "INFO.md").exists():
+        errors.append("Root INFO.md is not permitted")
     for package in packages:
         skill, plan, qa = package / "SKILL.md", package / "docs/plan.md", package / "docs/qa.md"
         if not all(path.is_file() for path in (skill, plan, qa)):

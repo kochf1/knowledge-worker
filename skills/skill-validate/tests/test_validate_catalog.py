@@ -32,3 +32,11 @@ class ValidateCatalogTest(unittest.TestCase):
             (skill / "docs/qa.md").write_text("Status: PENDING\n")
             (root / "skills/INFO.md").write_text("# SKILLS Info\n\n| Skill | Action | Status | Plan | QA |\n| --- | --- | --- | --- | --- |\n| [alpha-check](alpha-check/SKILL.md) | Check alpha. | PENDING | [Plan](alpha-check/docs/plan.md) | [QA](alpha-check/docs/qa.md) |\n")
             self.assertIn("alpha-check: requires exactly one primary agent role", CATALOG.check(root))
+
+    def test_rejects_root_info_document(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            (root / "INFO.md").write_text("# Retired root info\n")
+            (root / "skills").mkdir()
+            (root / "skills/INFO.md").write_text("# SKILLS Info\n")
+            self.assertIn("Root INFO.md is not permitted", CATALOG.check(root))

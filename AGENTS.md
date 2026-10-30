@@ -6,7 +6,7 @@ projects. Temporary migration evidence belongs only in `temp/`.
 
 ## Navigation
 
-- Start at [INFO.md](INFO.md).
+- Start at [README.md](README.md).
 - Read an invoked skill completely before using or changing it.
 - Use [skills/INFO.md](skills/INFO.md) for the local skill catalog.
 - Use [knowledge/INFO.md](knowledge/INFO.md) for the topic-based knowledge
@@ -39,7 +39,7 @@ running. See the transferable [graph-based multi-agent project model](skills/pro
 
 ## Info actions
 
-- `Show info` opens the root [INFO.md](INFO.md) in the workspace editor.
+- `Show info` opens the root [README.md](README.md) in the workspace editor.
 - `Show info {area}` opens the confirmed area's local `INFO.md` through
   [info-show](skills/info-show/SKILL.md).
 - `Maintain assets {request}` invokes
@@ -62,7 +62,7 @@ running. See the transferable [graph-based multi-agent project model](skills/pro
 - Every `SKILL.md` uses Codex-compatible top-level front matter: `name`,
   `description`, and optional supported fields only. Knowledge-worker routing
   data belongs in `metadata`; public actions are defined in `AGENTS.md` and
-  root `INFO.md`, not as custom Codex front-matter fields.
+  `README.md`, not as custom Codex front-matter fields.
 - Every local skill declares exactly one primary agent role in its `Scope`;
   that role must appear in the Agent graph above.
 - `knowledge/` contains durable topic-based knowledge only.
@@ -74,10 +74,10 @@ running. See the transferable [graph-based multi-agent project model](skills/pro
   environment material and must never be staged by the GitHub workflow.
 - `temp/` contains migration-only material and will be deleted after migration
   acceptance.
-- `INFO.md` is the internal navigation document. A root `README.md` is added
-  only when external GitHub documentation is specifically required.
-- The root `INFO.md` and `skills/INFO.md` must follow the approved formats in
-  [the info-format standard](skills/info-maintain/docs/info_format.md).
+- The root `README.md` is the project-level guide. Root `INFO.md` is not used.
+  Local INFO documents provide area navigation only.
+- Local INFO documents must follow the approved formats in [the info-format
+  standard](skills/info-maintain/docs/info_format.md).
 
 ## Knowledge topics
 

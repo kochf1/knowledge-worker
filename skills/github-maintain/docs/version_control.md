@@ -56,7 +56,7 @@ When GitHub versioning is selected during project setup, copy the complete
 `github-maintain` package, including this reference, into the target's local
 `skills/` folder. Add its row to `skills/INFO.md`, add the `GitHub {action}`
 block to the target `AGENTS.md`, and describe the action in the target root
-`INFO.md`. The target keeps its own remote, GitHub history, tags, releases, and
-project-specific pre-commit reconciliation rules. Add the selected default
+`README.md`. The target keeps its own remote, GitHub history, tags, releases,
+and project-specific pre-commit reconciliation rules. Add the selected default
 publication scope and local-runtime ignore rules to the target's `AGENTS.md`
 and `.gitignore`.

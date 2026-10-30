@@ -54,7 +54,7 @@ Primary agent role: {lowercase-hyphenated-role}.
 managed skill. `metadata.action` is required for every local skill and supplies
 the Skills Info Action value; it does not create an automatic user invocation.
 `metadata.source` records the skill origin. Public user actions belong in
-`AGENTS.md` and root `INFO.md`. No unsupported top-level front-matter fields
+`AGENTS.md` and root `README.md`. No unsupported top-level front-matter fields
 are allowed in a newly created or revised minimal skill.
 
 ## Required Meaning

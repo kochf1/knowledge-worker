@@ -22,6 +22,8 @@ and refreshes the skills catalog.
 - It must reject a managed skill that does not use the authoritative minimal
   format, including the required `metadata.action` value and exactly one
   primary agent-role declaration in its Scope.
+- It must reject a root `INFO.md`; project-level guidance belongs in the root
+  README and local areas retain their own INFO documents.
 
 ## Delegation to Code
 
@@ -33,5 +35,6 @@ and refreshes the skills catalog.
 - It must resolve one flat skill selector or discover every registered skill.
 - It must invoke the shared validator and report each selected skill's format, documentation, and executable-test results.
 - It must detect a missing or duplicate primary agent-role declaration.
+- It must detect a prohibited root INFO document.
 - It must refresh `skills/INFO.md` after every validation run.
 - It must prove selector handling and info refresh with executable test units.

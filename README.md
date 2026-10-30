@@ -77,7 +77,7 @@ organizing knowledge.
 
 ## Available actions
 
-- `Show info` opens the main project information document.
+- `Show info` opens the project guide.
 - `Show info {area}` opens the information document for a confirmed local area.
 - `Create topic {topic}` creates a structured, empty knowledge topic.
 - `Learn info about {topic}` adds supplied, attributed material to an existing topic.

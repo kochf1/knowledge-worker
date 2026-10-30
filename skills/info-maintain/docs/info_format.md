@@ -1,37 +1,9 @@
 # Knowledge-worker INFO Format
 
-This is the authoritative format for the Knowledge-worker root and skills
-INFO documents. `info-maintain`, `skill-create`, and `skill-validate` must
-apply it whenever they create, revise, or check either document.
-
-## Master INFO
-
-The root file is named `INFO.md` and contains exactly these sections, in this
-order:
-
-```md
-# Knowledge-worker Info
-
-## Description
-
-{One paragraph describing Knowledge-worker as a knowledge-base maintainer and
-how its topic-based knowledge base works.}
-
-## Entry Points
-
-| Entry Point | Location |
-| --- | --- |
-| Skills | [skills/INFO.md](skills/INFO.md) |
-| Knowledge | [knowledge/INFO.md](knowledge/INFO.md) |
-
-## Public Interfaces
-
-- `{action}` {what the action does and how its workflow works}.
-  ([workflow-name](skills/workflow-name/SKILL.md))
-```
-
-Do not add project metadata, status tables, plans, QA, release details, a
-README substitute, or any other sections to the master INFO document.
+This is the authoritative format for Knowledge-worker local INFO documents.
+`info-maintain`, `skill-create`, and `skill-validate` apply it whenever they
+create, revise, or check a local INFO document. Root `INFO.md` is not used;
+the root `README.md` is the project-level guide.
 
 ## Skills INFO
 

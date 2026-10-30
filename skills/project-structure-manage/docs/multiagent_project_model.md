@@ -64,7 +64,7 @@ For a public repository, the `asset-agent` hands an approved infographic and
 factual accessibility details to the publication role. The publication role
 uses `readme-maintain` to present the public README in this order: centered
 title and catch phrase, centered infographic, centered badges, public
-explanation, setup, actions, and examples. When GitHub versioning is selected,
+explanation, setup, and actions. When GitHub versioning is selected,
 the publication role uses `github-maintain` to publish the stable
 `{project-slug}_latest.zip` archive for direct extraction into a user's chosen
 destination folder.

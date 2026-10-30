@@ -22,8 +22,8 @@ Primary agent role: publication-agent.
 
 ## Workflow
 
-1. Read `docs/plan.md`, the target project's `AGENTS.md`, and its main
-   `INFO.md`. Confirm the exact project root and requested GitHub action.
+1. Read `docs/plan.md`, the target project's `AGENTS.md`, and its root
+   `README.md`. Confirm the exact project root and requested GitHub action.
 2. For `status`, inspect and report the local Git root, origin, branch,
    upstream, working-tree state, and available ahead/behind information without
    changing state.

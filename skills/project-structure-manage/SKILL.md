@@ -26,14 +26,14 @@ Primary agent role: structure-agent.
    repository visibility, README profile (`public-release`, `private`, or
    none), and whether the project owner selects the shared GitHub/version-control
    package and its default knowledge-publication scope. For a public-release profile, confirm the public README contract: approved
-   infographic, verifiable badges, clone destination, public actions, examples,
+   infographic, verifiable badges, clone destination, public actions,
    and the stable `{project-slug}_latest.zip` package when GitHub releases are
    selected.
 2. Inspect the target filesystem. If the expected structure is absent, create
    the required folders, including `assets/images/` for infographics and
    `assets/reports/` for generated reports, `AGENTS.md` including the
-   multi-agent orchestration contract, and main and local `INFO.md` documents.
-   Create `README.md` only when external documentation is explicitly required.
+   multi-agent orchestration contract, local `INFO.md` documents, and a root
+   `README.md` as the project-level guide. Do not create a root `INFO.md`.
 3. If the structure already exists, add only missing required elements and
    reconcile stale navigation. Preserve extra or conflicting material and
    report it for a user decision.
@@ -41,7 +41,7 @@ Primary agent role: structure-agent.
    confirmed scope. When GitHub versioning is selected, transfer the complete
    `github-maintain` package and its version-control reference, add its Skills
    Info entry, and add the portable GitHub action block to `AGENTS.md` and root
-   `INFO.md`. Configure `.gitignore` so knowledge and environment-local paths
+   `README.md`. Configure `.gitignore` so knowledge and environment-local paths
    stay local by default; record the selected repository visibility, README
    profile, and optional knowledge-publication action in `AGENTS.md`. For a
    `public-release` profile, transfer the complete current `readme-maintain`

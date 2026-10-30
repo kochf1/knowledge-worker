@@ -17,14 +17,14 @@ navigation without overwriting material.
 - It must confirm project identity, role, required structure, and external
   README need before changing a target.
 - For a public-release README profile, it must confirm the approved
-  infographic, verifiable badges, clone destination, public actions, examples,
+  infographic, verifiable badges, clone destination, public actions,
   and release-package policy before publication content is maintained.
 - It must establish the target's graph-based multi-agent orchestration
   contract: an orchestrator, necessary agent roles, skill ownership and
   handoffs, and escalation boundaries, using `multiagent_project_model.md`.
 - It must create required folders, `AGENTS.md` with the multi-agent
-  orchestration contract, and main and local `INFO.md`
-  documents when the target structure is absent.
+  orchestration contract, a root `README.md` project guide, and local `INFO.md`
+  documents when the target structure is absent; root `INFO.md` is prohibited.
 - It must create `assets/images/` for approved infographics and
   `assets/reports/` for generated reports; other asset subfolders require a
   clearly named asset type.
